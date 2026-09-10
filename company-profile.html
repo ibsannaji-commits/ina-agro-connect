@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>INA Natural Products PLC — Company Profile</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css" />
+  <style>
+    .profile-header { background:linear-gradient(135deg,#0f3d2a,#1a7a4c); color:white; padding:48px 24px 60px; }
+    .profile-header-inner { max-width:1280px; margin:0 auto; display:flex; gap:32px; align-items:center; }
+    .company-logo { width:100px; height:100px; background:white; border-radius:16px; display:flex; align-items:center; justify-content:center; font-size:2.5rem; flex-shrink:0; }
+    .profile-stats { display:flex; gap:32px; margin-top:20px; flex-wrap:wrap; }
+    .profile-stats div { text-align:center; }
+    .profile-stats strong { display:block; font-size:1.5rem; }
+    .profile-body { max-width:1280px; margin:-30px auto 60px; padding:0 24px; display:grid; grid-template-columns:1fr 340px; gap:32px; }
+    .profile-main { background:white; border-radius:16px; border:1px solid var(--border); padding:32px; }
+    .profile-side { display:flex; flex-direction:column; gap:20px; }
+    .side-card { background:white; border:1px solid var(--border); border-radius:12px; padding:20px; }
+    @media(max-width:900px){ .profile-body{grid-template-columns:1fr;} .profile-header-inner{flex-direction:column;text-align:center;} }
+  </style>
+</head>
+<body>
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="logo">
+        <div class="logo-icon">🌱</div>
+        <div>INA Agro Connect<span>Company Profile</span></div>
+      </a>
+      <div class="nav-actions">
+        <a href="marketplace.html" class="btn btn-outline btn-sm">← Marketplace</a>
+        <a href="#" class="btn btn-primary btn-sm">💬 Contact Supplier</a>
+      </div>
+    </div>
+  </nav>
+
+  <div class="profile-header">
+    <div class="profile-header-inner">
+      <div class="company-logo">🌱</div>
+      <div>
+        <div style="display:flex;align-items:center;gap:12px;flex-wrap:wrap;">
+          <h1 style="font-size:1.9rem;margin:0;">INA Natural Products PLC</h1>
+          <span class="badge" style="position:static;">✓ Business Verified</span>
+        </div>
+        <p style="opacity:0.9;margin:8px 0 0;">🇪🇹 Ethiopia · Producer & Exporter of Agricultural Products</p>
+        <div class="profile-stats">
+          <div><strong>18</strong><span style="font-size:0.85rem;opacity:0.85;">Products</span></div>
+          <div><strong>47</strong><span style="font-size:0.85rem;opacity:0.85;">Transactions</span></div>
+          <div><strong>96%</strong><span style="font-size:0.85rem;opacity:0.85;">Response Rate</span></div>
+          <div><strong>4.9</strong><span style="font-size:0.85rem;opacity:0.85;">Rating</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="profile-body">
+    <div class="profile-main">
+      <h2 style="margin-bottom:16px;">About the Company</h2>
+      <p style="line-height:1.7;color:var(--text);margin-bottom:20px;">
+        INA Natural Products PLC is a leading Ethiopian producer and supplier of high-quality agricultural products. 
+        We work closely with smallholder farmers and cooperatives across Oromia, Amhara and Sidama regions to source 
+        premium coffee, moringa, rosemary, spices and other botanicals for domestic and international B2B buyers.
+      </p>
+      <p style="line-height:1.7;color:var(--text);">
+        Our focus is on traceability, consistent quality and reliable supply. All products undergo internal quality 
+        checks and we support third-party inspection when required by buyers.
+      </p>
+
+      <h3 style="margin:32px 0 16px;">Verification Status</h3>
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px;">
+        <div style="padding:12px 16px;background:var(--primary-light);border-radius:8px;">✓ Business registration</div>
+        <div style="padding:12px 16px;background:var(--primary-light);border-radius:8px;">✓ Identity verification</div>
+        <div style="padding:12px 16px;background:var(--primary-light);border-radius:8px;">✓ Product verification</div>
+        <div style="padding:12px 16px;background:var(--primary-light);border-radius:8px;">✓ Contact verification</div>
+      </div>
+
+      <h3 style="margin:32px 0 16px;">Products from this Supplier</h3>
+      <div class="products-grid" style="grid-template-columns:repeat(auto-fill,minmax(220px,1fr));">
+        <a href="product-detail.html" class="product-card">
+          <div class="product-image" style="height:120px;font-size:2.5rem;">🌿</div>
+          <div class="product-body"><h3 style="font-size:0.95rem;">Premium Moringa Dried</h3><div class="product-price">Negotiable</div></div>
+        </a>
+        <a href="product-detail.html" class="product-card">
+          <div class="product-image" style="height:120px;font-size:2.5rem;">☕</div>
+          <div class="product-body"><h3 style="font-size:0.95rem;">Grade 1 Coffee</h3><div class="product-price">Negotiable</div></div>
+        </a>
+        <a href="product-detail.html" class="product-card">
+          <div class="product-image" style="height:120px;font-size:2.5rem;">🌿</div>
+          <div class="product-body"><h3 style="font-size:0.95rem;">Organic Rosemary</h3><div class="product-price">Negotiable</div></div>
+        </a>
+      </div>
+    </div>
+
+    <div class="profile-side">
+      <div class="side-card">
+        <h3 style="margin-bottom:14px;">Contact Supplier</h3>
+        <a href="#" class="btn btn-primary" style="width:100%;margin-bottom:10px;">💬 Send Message</a>
+        <a href="rfq.html" class="btn btn-outline" style="width:100%;">📋 Send RFQ</a>
+      </div>
+      <div class="side-card">
+        <h3 style="margin-bottom:12px;">Key Information</h3>
+        <div style="font-size:0.9rem;line-height:1.9;">
+          <div><strong>Type:</strong> Producer / Exporter</div>
+          <div><strong>Established:</strong> 2018</div>
+          <div><strong>Employees:</strong> 25–50</div>
+          <div><strong>Main Markets:</strong> Middle East, Europe, East Africa</div>
+          <div><strong>Languages:</strong> English, Amharic, Afaan Oromoo</div>
+        </div>
+      </div>
+      <div class="side-card">
+        <h3 style="margin-bottom:12px;">Response Performance</h3>
+        <div style="font-size:0.9rem;">
+          <div style="display:flex;justify-content:space-between;margin-bottom:8px;"><span>Avg. response time</span><strong>&lt; 4 hours</strong></div>
+          <div style="display:flex;justify-content:space-between;margin-bottom:8px;"><span>Quote acceptance</span><strong>78%</strong></div>
+          <div style="display:flex;justify-content:space-between;"><span>On-time delivery</span><strong>94%</strong></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Premium Ethiopian Moringa — INA Agro Connect</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css" />
+  <style>
+    .product-detail { max-width:1280px; margin:0 auto; padding:40px 24px 80px; display:grid; grid-template-columns:1fr 1fr; gap:48px; }
+    .product-gallery { background:#f0f7f3; border-radius:16px; height:420px; display:flex; align-items:center; justify-content:center; font-size:8rem; position:relative; overflow:hidden; }
+    .product-gallery img { width:100%; height:100%; object-fit:cover; }
+    .product-info h1 { font-size:1.9rem; margin-bottom:12px; }
+    .badge-row { display:flex; gap:10px; margin-bottom:16px; flex-wrap:wrap; }
+    .info-grid { display:grid; grid-template-columns:1fr 1fr; gap:14px; margin:24px 0; }
+    .info-item { background:var(--bg); padding:14px; border-radius:10px; }
+    .info-item label { font-size:0.8rem; color:var(--text-muted); display:block; margin-bottom:4px; }
+    .info-item strong { font-size:1rem; }
+    .supplier-card { background:white; border:1px solid var(--border); border-radius:12px; padding:20px; margin-top:28px; }
+    .tabs { display:flex; gap:24px; border-bottom:2px solid var(--border); margin:40px 0 24px; }
+    .tab { padding-bottom:12px; font-weight:600; color:var(--text-muted); cursor:pointer; }
+    .tab.active { color:var(--primary); border-bottom:3px solid var(--primary); margin-bottom:-2px; }
+    @media(max-width:900px){ .product-detail{grid-template-columns:1fr;} }
+  </style>
+</head>
+<body>
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="logo">
+        <div class="logo-icon">🌱</div>
+        <div>INA Agro Connect<span>Ethiopia’s Agricultural Marketplace</span></div>
+      </a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="marketplace.html" class="active">Marketplace</a></li>
+        <li><a href="buyer-dashboard.html">Buyers</a></li>
+        <li><a href="seller-dashboard.html">Suppliers</a></li>
+        <li><a href="#">Logistics</a></li>
+        <li><a href="#">About</a></li>
+      </ul>
+      <div class="nav-actions">
+        <a href="login.html" class="btn btn-outline">Login</a>
+        <a href="register.html" class="btn btn-primary">Create Account</a>
+      </div>
+    </div>
+  </nav>
+
+  <div style="max-width:1280px;margin:20px auto 0;padding:0 24px;font-size:0.9rem;color:var(--text-muted);">
+    <a href="index.html">Home</a> / <a href="marketplace.html">Marketplace</a> / <a href="#">Herbs & Botanicals</a> / <strong style="color:var(--text);">Premium Ethiopian Moringa</strong>
+  </div>
+
+  <div class="product-detail">
+    <div>
+      <div class="product-gallery">
+        <img src="https://images.unsplash.com/photo-1615485925615-4c2b0c0c0c0c?w=800&q=80" alt="Moringa" onerror="this.style.display='none'; this.parentElement.innerHTML='🌿';" />
+        <div style="position:absolute;inset:0;display:flex;align-items:center;justify-content:center;font-size:8rem;background:linear-gradient(135deg,#e8f5ee,#c8e6d4);">🌿</div>
+      </div>
+      <div style="display:flex;gap:12px;margin-top:16px;">
+        <div style="width:80px;height:80px;background:#e8f5ee;border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:2rem;border:2px solid var(--primary);">🌿</div>
+        <div style="width:80px;height:80px;background:#f0f7f3;border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:2rem;">🍃</div>
+        <div style="width:80px;height:80px;background:#f0f7f3;border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:2rem;">📦</div>
+      </div>
+    </div>
+
+    <div class="product-info">
+      <div class="badge-row">
+        <span class="badge" style="position:static;">✓ Verified Supplier</span>
+        <span class="badge" style="position:static;background:#2563eb;">🔵 Verified Product</span>
+        <span class="badge" style="position:static;background:#d97706;">🟡 Quality Checked</span>
+      </div>
+      <h1>Premium Ethiopian Moringa — Dried Leaf Powder</h1>
+      <p style="color:var(--text-muted);margin-bottom:8px;">📍 Oromia Region, Ethiopia · ⭐ 4.9 (24 reviews)</p>
+      <div style="font-size:1.4rem;font-weight:700;color:var(--primary);margin:16px 0;">Price: Negotiable</div>
+
+      <div class="info-grid">
+        <div class="info-item"><label>Available Quantity</label><strong>5 MT</strong></div>
+        <div class="info-item"><label>Minimum Order (MOQ)</label><strong>500 kg</strong></div>
+        <div class="info-item"><label>Quality Grade</label><strong>Grade A</strong></div>
+        <div class="info-item"><label>Harvest / Processing</label><strong>2026 Season</strong></div>
+        <div class="info-item"><label>Moisture Content</label><strong>&lt; 8%</strong></div>
+        <div class="info-item"><label>Packaging</label><strong>25 kg kraft bags</strong></div>
+      </div>
+
+      <div style="display:flex;gap:12px;margin:28px 0;">
+        <a href="rfq.html" class="btn btn-primary" style="padding:14px 28px;">📋 Request Quotation</a>
+        <a href="#" class="btn btn-outline" style="padding:14px 28px;">💬 Contact Supplier</a>
+      </div>
+
+      <div class="supplier-card">
+        <div style="display:flex;align-items:center;gap:16px;">
+          <div class="user-avatar" style="width:56px;height:56px;font-size:1.2rem;">IN</div>
+          <div style="flex:1;">
+            <div style="font-weight:700;font-size:1.1rem;">INA Natural Products PLC</div>
+            <div style="font-size:0.9rem;color:var(--text-muted);">🇪🇹 Ethiopia · ✓ Business Verified</div>
+            <div style="font-size:0.85rem;margin-top:4px;">Response rate 96% · 47 successful transactions</div>
+          </div>
+          <a href="company-profile.html" class="btn btn-outline btn-sm">View Profile</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div style="max-width:1280px;margin:0 auto;padding:0 24px 80px;">
+    <div class="tabs">
+      <div class="tab active">Description</div>
+      <div class="tab">Quality & Specs</div>
+      <div class="tab">Certificates</div>
+      <div class="tab">Shipping</div>
+      <div class="tab">Reviews (24)</div>
+    </div>
+    <div style="max-width:800px;line-height:1.7;color:var(--text);">
+      <p>Premium dried Moringa oleifera leaf powder sourced from carefully selected farms in the Oromia region of Ethiopia. Leaves are harvested at optimal maturity, shade-dried, and milled under hygienic conditions to preserve nutrients and color.</p>
+      <p style="margin-top:16px;">Ideal for food, beverage, nutraceutical and cosmetic applications. Available in bulk quantities with flexible packaging options. Full traceability from farm to shipment.</p>
+      <ul style="margin-top:16px;padding-left:20px;">
+        <li>100% pure Moringa leaf powder</li>
+        <li>No additives or preservatives</li>
+        <li>Low moisture for long shelf life</li>
+        <li>Suitable for export markets</li>
+      </ul>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="footer-content">
+      <div>
+        <div class="logo" style="color:white;margin-bottom:16px;"><div class="logo-icon">🌱</div><div>INA Agro Connect</div></div>
+        <p style="font-size:0.9rem;line-height:1.7;max-width:280px;">Connecting Ethiopian farmers, suppliers and buyers to local and global markets.</p>
+      </div>
+      <div><h4>Marketplace</h4><ul><li><a href="marketplace.html">Browse Products</a></li><li><a href="rfq.html">Create RFQ</a></li></ul></div>
+      <div><h4>For Business</h4><ul><li><a href="seller-dashboard.html">Seller Dashboard</a></li><li><a href="buyer-dashboard.html">Buyer Dashboard</a></li></ul></div>
+      <div><h4>Company</h4><ul><li><a href="#">About</a></li><li><a href="#">Contact</a></li></ul></div>
+    </div>
+    <div class="footer-bottom"><span>© 2026 INA Agro Connect</span><span>Ethiopia 🇪🇹 → Global</span></div>
+  </footer>
+</body>
+</html>

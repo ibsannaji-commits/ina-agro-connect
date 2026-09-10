@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact — INA Agro Connect</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css" />
+  <style>
+    .contact-grid { max-width: 900px; margin: 48px auto; padding: 0 24px; display: grid; grid-template-columns: 1fr 1fr; gap: 40px; }
+    .form-group { margin-bottom: 16px; }
+    .form-group label { display: block; font-weight: 600; font-size: 0.9rem; margin-bottom: 6px; }
+    .form-group input, .form-group textarea, .form-group select {
+      width: 100%; padding: 12px 14px; border: 1.5px solid #e2e8e4; border-radius: 8px; font-size: 0.95rem;
+    }
+    .form-group input:focus, .form-group textarea:focus { outline: none; border-color: #1a7a4c; }
+    .info-card { background: #e8f5ee; border-radius: 16px; padding: 28px; }
+    @media(max-width:700px){ .contact-grid { grid-template-columns: 1fr; } }
+  </style>
+</head>
+<body>
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="logo">
+        <div class="logo-icon">🌱</div>
+        <div>INA Agro Connect<span>Ethiopia’s Agricultural Marketplace</span></div>
+      </a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="marketplace.html">Marketplace</a></li>
+        <li><a href="pricing.html">Pricing</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+      </ul>
+      <div class="nav-actions">
+        <a href="login.html" class="btn btn-outline">Login</a>
+        <a href="register.html" class="btn btn-primary">Create Account</a>
+      </div>
+    </div>
+  </nav>
+
+  <section style="background:linear-gradient(135deg,#0f3d2a,#1a7a4c);color:white;padding:50px 24px;text-align:center;">
+    <h1 style="font-size:2.2rem;font-weight:800;margin-bottom:10px;">Contact Us</h1>
+    <p style="opacity:0.9;">We’d love to hear from suppliers, buyers and partners</p>
+  </section>
+
+  <div class="contact-grid">
+    <div>
+      <h2 style="font-size:1.3rem;margin-bottom:20px;">Send a message</h2>
+      <form onsubmit="event.preventDefault();alert('Thank you! In production this sends to our team.');">
+        <div class="form-group">
+          <label>Full Name *</label>
+          <input type="text" required placeholder="Your name" />
+        </div>
+        <div class="form-group">
+          <label>Email *</label>
+          <input type="email" required placeholder="you@company.com" />
+        </div>
+        <div class="form-group">
+          <label>Phone</label>
+          <input type="tel" placeholder="+251 9..." />
+        </div>
+        <div class="form-group">
+          <label>Subject</label>
+          <select>
+            <option>General inquiry</option>
+            <option>Supplier onboarding</option>
+            <option>Buyer partnership</option>
+            <option>Technical support</option>
+            <option>Other</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label>Message *</label>
+          <textarea rows="5" required placeholder="How can we help?"></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary" style="width:100%;padding:14px;">Send Message</button>
+      </form>
+    </div>
+    <div>
+      <div class="info-card">
+        <h3 style="color:#1a7a4c;margin-bottom:16px;">Get in touch</h3>
+        <p style="margin-bottom:12px;line-height:1.6;"><strong>Email</strong><br>hello@inaagroconnect.com</p>
+        <p style="margin-bottom:12px;line-height:1.6;"><strong>Phone</strong><br>+251 9XX XXX XXX</p>
+        <p style="margin-bottom:12px;line-height:1.6;"><strong>Location</strong><br>Addis Ababa, Ethiopia</p>
+        <p style="line-height:1.6;"><strong>Hours</strong><br>Mon–Fri, 9:00–17:00 EAT</p>
+      </div>
+      <div style="margin-top:24px;padding:20px;background:white;border:1px solid #e2e8e4;border-radius:12px;">
+        <h4 style="margin-bottom:10px;">For suppliers</h4>
+        <p style="font-size:0.9rem;color:#5a6a5e;margin-bottom:12px;">Ready to list your products?</p>
+        <a href="register.html" class="btn btn-primary btn-sm">Create Supplier Account</a>
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="footer-content">
+      <div>
+        <div class="logo" style="color:white;margin-bottom:16px;"><div class="logo-icon">🌱</div><div>INA Agro Connect</div></div>
+        <p style="font-size:0.9rem;line-height:1.7;max-width:280px;">Connecting Ethiopian farmers, suppliers and buyers to local and global markets.</p>
+      </div>
+      <div><h4>Marketplace</h4><ul><li><a href="marketplace.html">Browse Products</a></li><li><a href="pricing.html">Pricing</a></li></ul></div>
+      <div><h4>Company</h4><ul><li><a href="about.html">About</a></li><li><a href="contact.html">Contact</a></li></ul></div>
+      <div><h4>Account</h4><ul><li><a href="login.html">Login</a></li><li><a href="register.html">Register</a></li></ul></div>
+    </div>
+    <div class="footer-bottom"><span>© 2026 INA Agro Connect</span><span>Ethiopia 🇪🇹 → Global</span></div>
+  </footer>
+</body>
+</html>

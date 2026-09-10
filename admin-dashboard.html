@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Admin Dashboard — INA Agro Connect</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="logo">
+        <div class="logo-icon">🌱</div>
+        <div>INA Agro Connect<span>Admin Control Center</span></div>
+      </a>
+      <div class="nav-actions">
+        <button class="btn btn-outline btn-sm" style="position:relative;">🔔 <span style="position:absolute;top:-4px;right:-4px;background:var(--danger);color:white;font-size:0.65rem;width:16px;height:16px;border-radius:50%;display:flex;align-items:center;justify-content:center;">12</span></button>
+        <div style="display:flex;align-items:center;gap:10px;margin-left:8px;">
+          <div class="user-avatar" style="width:36px;height:36px;background:#0f3d2a;">AD</div>
+          <div>
+            <div style="font-weight:600;font-size:0.9rem;">Platform Admin</div>
+            <div style="font-size:0.75rem;color:var(--text-muted);">Super Admin</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <div class="dashboard-layout">
+    <aside class="dash-sidebar">
+      <ul class="dash-nav">
+        <li><a href="#" class="active">📊 Overview</a></li>
+        <li><a href="#">👥 Users</a></li>
+        <li><a href="#">🌿 Suppliers</a></li>
+        <li><a href="#">🛒 Buyers</a></li>
+        <li><a href="#">📦 Products</a></li>
+        <li><a href="#">✅ Verification Queue</a></li>
+        <li><a href="#">📋 Orders & Transactions</a></li>
+        <li><a href="#">💰 Payments</a></li>
+        <li><a href="#">🚚 Logistics</a></li>
+        <li><a href="#">📈 Reports & Analytics</a></li>
+        <li><a href="#">⚙️ Settings</a></li>
+      </ul>
+    </aside>
+
+    <main class="dash-main">
+      <div class="dash-header">
+        <div>
+          <h1>Platform Overview</h1>
+          <p style="color:var(--text-muted);margin-top:4px;">INA Agro Connect control center — real-time snapshot</p>
+        </div>
+        <div style="display:flex;gap:10px;">
+          <button class="btn btn-outline btn-sm">Export Report</button>
+          <button class="btn btn-primary btn-sm">+ Add Admin</button>
+        </div>
+      </div>
+
+      <div class="metrics-grid" style="grid-template-columns:repeat(3,1fr);">
+        <div class="metric-card">
+          <div class="icon">👥</div>
+          <div class="value">12,450</div>
+          <div class="label">Total Users</div>
+        </div>
+        <div class="metric-card">
+          <div class="icon">🌿</div>
+          <div class="value">2,840</div>
+          <div class="label">Suppliers</div>
+        </div>
+        <div class="metric-card">
+          <div class="icon">🛒</div>
+          <div class="value">1,720</div>
+          <div class="label">Buyers</div>
+        </div>
+        <div class="metric-card">
+          <div class="icon">📦</div>
+          <div class="value">8,650</div>
+          <div class="label">Products</div>
+        </div>
+        <div class="metric-card">
+          <div class="icon">📋</div>
+          <div class="value">3,214</div>
+          <div class="label">Orders</div>
+        </div>
+        <div class="metric-card">
+          <div class="icon">⏳</div>
+          <div class="value">124</div>
+          <div class="label">Pending Verification</div>
+        </div>
+      </div>
+
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:24px;">
+        <div class="panel">
+          <div class="panel-header">
+            <h2>Pending Verifications</h2>
+            <a href="#" style="color:var(--primary);font-size:0.9rem;font-weight:600;">View All →</a>
+          </div>
+          <ul class="activity-list">
+            <li class="activity-item">
+              <div class="activity-info">
+                <div class="activity-icon">🏢</div>
+                <div>
+                  <div style="font-weight:600;">Green Valley Exports</div>
+                  <div style="font-size:0.85rem;color:var(--text-muted);">Business documents · Submitted 2h ago</div>
+                </div>
+              </div>
+              <div style="display:flex;gap:8px;">
+                <button class="btn btn-primary btn-sm">Approve</button>
+                <button class="btn btn-outline btn-sm">Review</button>
+              </div>
+            </li>
+            <li class="activity-item">
+              <div class="activity-info">
+                <div class="activity-icon">🌿</div>
+                <div>
+                  <div style="font-weight:600;">Product: Organic Teff</div>
+                  <div style="font-size:0.85rem;color:var(--text-muted);">Quality check · Supplier: Habesha Farms</div>
+                </div>
+              </div>
+              <div style="display:flex;gap:8px;">
+                <button class="btn btn-primary btn-sm">Approve</button>
+                <button class="btn btn-outline btn-sm">Review</button>
+              </div>
+            </li>
+            <li class="activity-item">
+              <div class="activity-info">
+                <div class="activity-icon">👤</div>
+                <div>
+                  <div style="font-weight:600;">Identity: Abebe Kebede</div>
+                  <div style="font-size:0.85rem;color:var(--text-muted);">KYC documents · Submitted yesterday</div>
+                </div>
+              </div>
+              <div style="display:flex;gap:8px;">
+                <button class="btn btn-primary btn-sm">Approve</button>
+                <button class="btn btn-outline btn-sm">Review</button>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <div class="panel">
+          <div class="panel-header">
+            <h2>Recent Platform Activity</h2>
+            <a href="#" style="color:var(--primary);font-size:0.9rem;font-weight:600;">View All →</a>
+          </div>
+          <ul class="activity-list">
+            <li class="activity-item">
+              <div class="activity-info">
+                <div class="activity-icon">🛒</div>
+                <div>
+                  <div style="font-weight:600;">New Order #INA-2026-00128</div>
+                  <div style="font-size:0.85rem;color:var(--text-muted);">5 MT Coffee · Value: under review</div>
+                </div>
+              </div>
+              <span style="font-size:0.8rem;color:var(--text-muted);">12 min ago</span>
+            </li>
+            <li class="activity-item">
+              <div class="activity-info">
+                <div class="activity-icon">👤</div>
+                <div>
+                  <div style="font-weight:600;">New Supplier Registered</div>
+                  <div style="font-size:0.85rem;color:var(--text-muted);">Sidama Coffee Cooperative</div>
+                </div>
+              </div>
+              <span style="font-size:0.8rem;color:var(--text-muted);">1h ago</span>
+            </li>
+            <li class="activity-item">
+              <div class="activity-info">
+                <div class="activity-icon">⚠️</div>
+                <div>
+                  <div style="font-weight:600;">Dispute Opened</div>
+                  <div style="font-size:0.85rem;color:var(--text-muted);">Order #INA-2026-00098 · Quality claim</div>
+                </div>
+              </div>
+              <span style="font-size:0.8rem;color:var(--text-muted);">3h ago</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="panel" style="margin-top:24px;">
+        <div class="panel-header">
+          <h2>Quick Admin Actions</h2>
+        </div>
+        <div class="quick-actions">
+          <a href="#" class="quick-action"><div class="icon">✅</div><div><div style="font-weight:600;">Verification Queue</div><div style="font-size:0.85rem;color:var(--text-muted);">124 items pending</div></div></a>
+          <a href="#" class="quick-action"><div class="icon">📊</div><div><div style="font-weight:600;">Sales Report</div><div style="font-size:0.85rem;color:var(--text-muted);">Generate monthly report</div></div></a>
+          <a href="#" class="quick-action"><div class="icon">🛡️</div><div><div style="font-weight:600;">Fraud Monitoring</div><div style="font-size:0.85rem;color:var(--text-muted);">Review flagged accounts</div></div></a>
+        </div>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

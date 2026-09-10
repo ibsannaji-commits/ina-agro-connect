@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Marketplace — INA Agro Connect</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+  <!-- NAVIGATION -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="logo">
+        <div class="logo-icon">🌱</div>
+        <div>
+          INA Agro Connect
+          <span>Ethiopia’s Agricultural Marketplace</span>
+        </div>
+      </a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="marketplace.html" class="active">Marketplace</a></li>
+        <li><a href="buyer-dashboard.html">Buyers</a></li>
+        <li><a href="seller-dashboard.html">Suppliers</a></li>
+        <li><a href="pricing.html">Pricing</a></li>
+        <li><a href="rfq.html">RFQ</a></li>
+        <li><a href="admin-dashboard.html">Admin</a></li>
+        <li><a href="#">About</a></li>
+      </ul>
+      <div class="nav-actions">
+        <a href="login.html" class="btn btn-outline">Login</a>
+        <a href="register.html" class="btn btn-primary">Create Account</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- MARKETPLACE LAYOUT -->
+  <div class="marketplace-layout">
+    
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
+      <h3>Product Categories</h3>
+      <ul class="category-list">
+        <li><a href="#" class="active">🌿 Herbs & Botanicals <span class="count">128</span></a></li>
+        <li><a href="#">☕ Coffee <span class="count">96</span></a></li>
+        <li><a href="#">🌶️ Spices <span class="count">84</span></a></li>
+        <li><a href="#">🌾 Grains <span class="count">72</span></a></li>
+        <li><a href="#">🥜 Pulses <span class="count">68</span></a></li>
+        <li><a href="#">🍯 Honey <span class="count">45</span></a></li>
+        <li><a href="#">🌱 Moringa <span class="count">38</span></a></li>
+        <li><a href="#">🌿 Rosemary <span class="count">22</span></a></li>
+        <li><a href="#">🍵 Tea <span class="count">31</span></a></li>
+        <li><a href="#">🥭 Fruits <span class="count">27</span></a></li>
+        <li><a href="#">🥬 Vegetables <span class="count">19</span></a></li>
+        <li><a href="#">📦 Other <span class="count">16</span></a></li>
+      </ul>
+      <div style="margin-top:28px; padding:18px; background:var(--primary-light); border-radius:10px; text-align:center;">
+        <div style="font-size:1.8rem; margin-bottom:8px;">🌱</div>
+        <p style="font-size:0.9rem; margin-bottom:12px; color:var(--text);">List your products and reach global buyers</p>
+        <a href="seller-dashboard.html" class="btn btn-primary btn-sm" style="width:100%;">Become a Supplier →</a>
+      </div>
+    </aside>
+
+    <!-- MAIN CONTENT -->
+    <main>
+      <div style="margin-bottom:8px;">
+        <h1 style="font-size:1.7rem; font-weight:700;">Browse Agricultural Products</h1>
+        <p style="color:var(--text-muted);">Discover high-quality agricultural products from verified Ethiopian suppliers</p>
+      </div>
+
+      <!-- FILTERS -->
+      <div class="filters">
+        <select>
+          <option>📍 All Locations</option>
+          <option>Oromia</option>
+          <option>Amhara</option>
+          <option>Sidama</option>
+          <option>SNNPR</option>
+          <option>Tigray</option>
+        </select>
+        <select>
+          <option>⚖️ Any Quantity</option>
+          <option>Under 1 MT</option>
+          <option>1–5 MT</option>
+          <option>5–20 MT</option>
+          <option>20+ MT</option>
+        </select>
+        <select>
+          <option>💰 Any Price</option>
+          <option>Negotiable only</option>
+        </select>
+        <select>
+          <option>🏅 Any Certification</option>
+          <option>Organic</option>
+          <option>Fair Trade</option>
+          <option>Verified Product</option>
+        </select>
+        <button class="btn btn-outline btn-sm">Reset Filters</button>
+        <div style="margin-left:auto; font-size:0.9rem; color:var(--text-muted);">
+          Sort by: 
+          <select style="margin-left:6px;">
+            <option>Relevance</option>
+            <option>Newest</option>
+            <option>Price</option>
+            <option>Quantity</option>
+          </select>
+        </div>
+      </div>
+
+      <!-- PRODUCT GRID -->
+      <div class="products-grid">
+        <!-- Product 1 -->
+        <div class="product-card">
+          <div class="product-image">
+            <span class="badge">✓ Verified Supplier</span>
+            🌿
+          </div>
+          <div class="product-body">
+            <h3>Premium Ethiopian Moringa — Dried</h3>
+            <div class="product-meta">
+              <span>📍 Oromia, Ethiopia</span>
+              <span>⭐ 4.9 (24)</span>
+            </div>
+            <div class="product-meta">
+              <span>⚖️ Available: 5 MT</span>
+              <span>📦 MOQ: 500 kg</span>
+            </div>
+            <div class="product-price">Price: Negotiable</div>
+            <div class="product-actions">
+              <a href="#" class="btn btn-primary btn-sm">View Product</a>
+              <a href="#" class="btn btn-outline btn-sm">Contact Supplier</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product 2 -->
+        <div class="product-card">
+          <div class="product-image">
+            <span class="badge">✓ Verified Supplier</span>
+            ☕
+          </div>
+          <div class="product-body">
+            <h3>Grade 1 Ethiopian Coffee</h3>
+            <div class="product-meta">
+              <span>📍 Sidama, Ethiopia</span>
+              <span>⭐ 4.8 (56)</span>
+            </div>
+            <div class="product-meta">
+              <span>⚖️ Available: 20 MT</span>
+              <span>📦 MOQ: 1 MT</span>
+            </div>
+            <div class="product-price">Price: Negotiable</div>
+            <div class="product-actions">
+              <a href="#" class="btn btn-primary btn-sm">View Product</a>
+              <a href="#" class="btn btn-outline btn-sm">Contact Supplier</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product 3 -->
+        <div class="product-card">
+          <div class="product-image">
+            <span class="badge">✓ Verified Supplier</span>
+            🌿
+          </div>
+          <div class="product-body">
+            <h3>Organic Rosemary Leaves</h3>
+            <div class="product-meta">
+              <span>📍 Amhara, Ethiopia</span>
+              <span>⭐ 4.7 (18)</span>
+            </div>
+            <div class="product-meta">
+              <span>⚖️ Available: 3 MT</span>
+              <span>📦 MOQ: 300 kg</span>
+            </div>
+            <div class="product-price">Price: Negotiable</div>
+            <div class="product-actions">
+              <a href="#" class="btn btn-primary btn-sm">View Product</a>
+              <a href="#" class="btn btn-outline btn-sm">Contact Supplier</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product 4 -->
+        <div class="product-card">
+          <div class="product-image">
+            <span class="badge">✓ Verified Supplier</span>
+            🥭
+          </div>
+          <div class="product-body">
+            <h3>Ethiopian Fresh Mango (Keitt)</h3>
+            <div class="product-meta">
+              <span>📍 Oromia, Ethiopia</span>
+              <span>⭐ 4.6 (31)</span>
+            </div>
+            <div class="product-meta">
+              <span>⚖️ Available: 10 MT</span>
+              <span>📦 MOQ: 1 MT</span>
+            </div>
+            <div class="product-price">Price: Negotiable</div>
+            <div class="product-actions">
+              <a href="#" class="btn btn-primary btn-sm">View Product</a>
+              <a href="#" class="btn btn-outline btn-sm">Contact Supplier</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product 5 -->
+        <div class="product-card">
+          <div class="product-image">
+            <span class="badge">✓ Verified Supplier</span>
+            🌾
+          </div>
+          <div class="product-body">
+            <h3>Ethiopian White Sesame Seeds</h3>
+            <div class="product-meta">
+              <span>📍 Tigray, Ethiopia</span>
+              <span>⭐ 4.9 (42)</span>
+            </div>
+            <div class="product-meta">
+              <span>⚖️ Available: 15 MT</span>
+              <span>📦 MOQ: 1 MT</span>
+            </div>
+            <div class="product-price">Price: Negotiable</div>
+            <div class="product-actions">
+              <a href="#" class="btn btn-primary btn-sm">View Product</a>
+              <a href="#" class="btn btn-outline btn-sm">Contact Supplier</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product 6 -->
+        <div class="product-card">
+          <div class="product-image">
+            <span class="badge">✓ Verified Supplier</span>
+            🌶️
+          </div>
+          <div class="product-body">
+            <h3>Dried Bird’s Eye Chili</h3>
+            <div class="product-meta">
+              <span>📍 SNNPR, Ethiopia</span>
+              <span>⭐ 4.5 (15)</span>
+            </div>
+            <div class="product-meta">
+              <span>⚖️ Available: 4 MT</span>
+              <span>📦 MOQ: 500 kg</span>
+            </div>
+            <div class="product-price">Price: Negotiable</div>
+            <div class="product-actions">
+              <a href="#" class="btn btn-primary btn-sm">View Product</a>
+              <a href="#" class="btn btn-outline btn-sm">Contact Supplier</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- PAGINATION -->
+      <div style="display:flex; justify-content:center; align-items:center; gap:8px; margin-top:40px;">
+        <button class="btn btn-outline btn-sm">← Prev</button>
+        <button class="btn btn-primary btn-sm">1</button>
+        <button class="btn btn-outline btn-sm">2</button>
+        <button class="btn btn-outline btn-sm">3</button>
+        <span style="color:var(--text-muted);">…</span>
+        <button class="btn btn-outline btn-sm">55</button>
+        <button class="btn btn-outline btn-sm">Next →</button>
+      </div>
+      <p style="text-align:center; margin-top:12px; color:var(--text-muted); font-size:0.9rem;">Showing 1–6 of 324 products</p>
+    </main>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-content">
+      <div>
+        <div class="logo" style="color:white; margin-bottom:16px;">
+          <div class="logo-icon">🌱</div>
+          <div>INA Agro Connect</div>
+        </div>
+        <p style="font-size:0.9rem; line-height:1.7; max-width:280px;">
+          Connecting Ethiopian farmers, suppliers and buyers to local and global markets through a trusted B2B agricultural marketplace.
+        </p>
+      </div>
+      <div>
+        <h4>Marketplace</h4>
+        <ul>
+          <li><a href="marketplace.html">Browse Products</a></li>
+          <li><a href="#">Categories</a></li>
+          <li><a href="#">Suppliers</a></li>
+          <li><a href="#">RFQ System</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>For Business</h4>
+        <ul>
+          <li><a href="seller-dashboard.html">Seller Dashboard</a></li>
+          <li><a href="#">Become a Supplier</a></li>
+          <li><a href="#">Logistics Partners</a></li>
+          <li><a href="#">Verification</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Company</h4>
+        <ul>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Contact</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Terms of Service</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 INA Agro Connect. All rights reserved.</span>
+      <span>Ethiopia 🇪🇹 → Africa → Global</span>
+    </div>
+  </footer>
+
+</body>
+</html>

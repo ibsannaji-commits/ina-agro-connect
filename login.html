@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Login — INA Agro Connect</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css" />
+  <style>
+    .auth-page { min-height:100vh; display:flex; }
+    .auth-left { flex:1; background:linear-gradient(135deg,#0f3d2a,#1a7a4c); color:white; padding:60px; display:flex; flex-direction:column; justify-content:center; }
+    .auth-right { flex:1; display:flex; align-items:center; justify-content:center; padding:40px; background:var(--bg); }
+    .auth-card { background:white; border-radius:16px; padding:40px; width:100%; max-width:420px; box-shadow:var(--shadow); }
+    .form-group { margin-bottom:20px; }
+    .form-group label { display:block; font-weight:600; font-size:0.9rem; margin-bottom:8px; }
+    .form-group input { width:100%; padding:12px 14px; border:1.5px solid var(--border); border-radius:8px; font-size:0.95rem; }
+    .form-group input:focus { outline:none; border-color:var(--primary); }
+    @media(max-width:900px){ .auth-left{display:none;} }
+  </style>
+</head>
+<body>
+  <div class="auth-page">
+    <div class="auth-left">
+      <div class="logo" style="color:white;margin-bottom:40px;">
+        <div class="logo-icon">🌱</div>
+        <div>INA Agro Connect</div>
+      </div>
+      <h1 style="font-size:2.4rem;line-height:1.2;margin-bottom:16px;">Welcome back to Ethiopia’s agricultural marketplace</h1>
+      <p style="opacity:0.9;font-size:1.1rem;max-width:400px;">Connect with verified buyers and suppliers. Manage products, RFQs, orders and logistics in one place.</p>
+      <div style="margin-top:40px;display:flex;gap:24px;">
+        <div><strong style="font-size:1.5rem;">2,840+</strong><div style="opacity:0.8;font-size:0.9rem;">Suppliers</div></div>
+        <div><strong style="font-size:1.5rem;">8,650+</strong><div style="opacity:0.8;font-size:0.9rem;">Products</div></div>
+        <div><strong style="font-size:1.5rem;">47+</strong><div style="opacity:0.8;font-size:0.9rem;">Countries</div></div>
+      </div>
+    </div>
+    <div class="auth-right">
+      <div class="auth-card">
+        <h2 style="font-size:1.6rem;margin-bottom:8px;">Sign in</h2>
+        <p style="color:var(--text-muted);margin-bottom:28px;">Enter your credentials to access your account</p>
+        <form>
+          <div class="form-group">
+            <label>Email or Phone</label>
+            <input type="text" placeholder="you@company.com or +251..." required />
+          </div>
+          <div class="form-group">
+            <label>Password</label>
+            <input type="password" placeholder="••••••••" required />
+          </div>
+          <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:24px;font-size:0.9rem;">
+            <label style="display:flex;align-items:center;gap:8px;font-weight:500;"><input type="checkbox" /> Remember me</label>
+            <a href="#" style="color:var(--primary);">Forgot password?</a>
+          </div>
+          <button type="submit" class="btn btn-primary" style="width:100%;padding:14px;font-size:1rem;">Sign In</button>
+        </form>
+        <p style="text-align:center;margin-top:24px;font-size:0.95rem;color:var(--text-muted);">
+          Don’t have an account? <a href="register.html" style="color:var(--primary);font-weight:600;">Create Account</a>
+        </p>
+        <div style="margin-top:28px;padding-top:20px;border-top:1px solid var(--border);text-align:center;font-size:0.85rem;color:var(--text-muted);">
+          Or continue with
+          <div style="display:flex;gap:12px;justify-content:center;margin-top:12px;">
+            <button class="btn btn-outline btn-sm">Google</button>
+            <button class="btn btn-outline btn-sm">WhatsApp</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

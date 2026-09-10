@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Buyer Dashboard — INA Agro Connect</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="logo">
+        <div class="logo-icon">🌱</div>
+        <div>INA Agro Connect<span>Buyer Dashboard</span></div>
+      </a>
+      <div class="nav-actions">
+        <button class="btn btn-outline btn-sm" style="position:relative;">🔔 <span style="position:absolute;top:-4px;right:-4px;background:var(--danger);color:white;font-size:0.65rem;width:16px;height:16px;border-radius:50%;display:flex;align-items:center;justify-content:center;">5</span></button>
+        <div style="display:flex;align-items:center;gap:10px;margin-left:8px;">
+          <div class="user-avatar" style="width:36px;height:36px;">GB</div>
+          <div>
+            <div style="font-weight:600;font-size:0.9rem;">Global Buyer</div>
+            <div style="font-size:0.75rem;color:var(--text-muted);">Buyer Account</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <div class="dashboard-layout">
+    <aside class="dash-sidebar">
+      <div class="user-info">
+        <div class="user-avatar">GB</div>
+        <div>
+          <div style="font-weight:600;font-size:0.95rem;">Global Buyer Ltd</div>
+          <div style="font-size:0.8rem;color:var(--primary);">✓ Verified Buyer</div>
+        </div>
+      </div>
+      <ul class="dash-nav">
+        <li><a href="#" class="active">🏠 Dashboard</a></li>
+        <li><a href="marketplace.html">🔎 Find Products</a></li>
+        <li><a href="rfq.html">📋 Create RFQ</a></li>
+        <li><a href="#">📦 My Orders</a></li>
+        <li><a href="#">🚚 Track Shipment</a></li>
+        <li><a href="#">💬 Messages</a></li>
+        <li><a href="#">⭐ Saved Suppliers</a></li>
+        <li><a href="#">📊 Market Intelligence</a></li>
+        <li><a href="#">⚙️ Account Settings</a></li>
+      </ul>
+    </aside>
+
+    <main class="dash-main">
+      <div class="dash-header">
+        <div>
+          <h1>Welcome, Global Buyer 👋</h1>
+          <p style="color:var(--text-muted);margin-top:4px;">Manage your sourcing, RFQs and orders in one place.</p>
+        </div>
+        <a href="rfq.html" class="btn btn-primary">+ Create RFQ</a>
+      </div>
+
+      <div class="metrics-grid">
+        <div class="metric-card">
+          <div class="icon">📋</div>
+          <div class="value">7</div>
+          <div class="label">Open RFQs</div>
+        </div>
+        <div class="metric-card">
+          <div class="icon">🛒</div>
+          <div class="value">4</div>
+          <div class="label">Active Orders</div>
+        </div>
+        <div class="metric-card">
+          <div class="icon">💬</div>
+          <div class="value">12</div>
+          <div class="label">Unread Messages</div>
+        </div>
+        <div class="metric-card">
+          <div class="icon">⭐</div>
+          <div class="value">18</div>
+          <div class="label">Saved Suppliers</div>
+        </div>
+      </div>
+
+      <div class="panel">
+        <div class="panel-header">
+          <h2>Quick Actions</h2>
+        </div>
+        <div class="quick-actions">
+          <a href="marketplace.html" class="quick-action">
+            <div class="icon">🔎</div>
+            <div>
+              <div style="font-weight:600;">Find Products</div>
+              <div style="font-size:0.85rem;color:var(--text-muted);">Search verified Ethiopian suppliers</div>
+            </div>
+          </a>
+          <a href="rfq.html" class="quick-action">
+            <div class="icon">📋</div>
+            <div>
+              <div style="font-weight:600;">Create RFQ</div>
+              <div style="font-size:0.85rem;color:var(--text-muted);">Send request for quotation</div>
+            </div>
+          </a>
+          <a href="#" class="quick-action">
+            <div class="icon">🚚</div>
+            <div>
+              <div style="font-weight:600;">Track Shipment</div>
+              <div style="font-size:0.85rem;color:var(--text-muted);">Follow your orders in transit</div>
+            </div>
+          </a>
+        </div>
+      </div>
+
+      <div class="panel">
+        <div class="panel-header">
+          <h2>Recent RFQs</h2>
+          <a href="#" style="color:var(--primary);font-size:0.9rem;font-weight:600;">View All →</a>
+        </div>
+        <ul class="activity-list">
+          <li class="activity-item">
+            <div class="activity-info">
+              <div class="activity-icon">☕</div>
+              <div>
+                <div style="font-weight:600;">RFQ-2026-0912 · Grade 1 Coffee</div>
+                <div style="font-size:0.85rem;color:var(--text-muted);">10 MT · Destination: Dubai · 3 quotes received</div>
+              </div>
+            </div>
+            <span class="status open">Active</span>
+          </li>
+          <li class="activity-item">
+            <div class="activity-info">
+              <div class="activity-icon">🌿</div>
+              <div>
+                <div style="font-weight:600;">RFQ-2026-0908 · Dried Moringa</div>
+                <div style="font-size:0.85rem;color:var(--text-muted);">5 MT · Destination: Netherlands · 1 quote</div>
+              </div>
+            </div>
+            <span class="status processing">Reviewing</span>
+          </li>
+          <li class="activity-item">
+            <div class="activity-info">
+              <div class="activity-icon">🌶️</div>
+              <div>
+                <div style="font-weight:600;">RFQ-2026-0899 · Bird’s Eye Chili</div>
+                <div style="font-size:0.85rem;color:var(--text-muted);">2 MT · Destination: Addis Ababa · Closed</div>
+              </div>
+            </div>
+            <span class="status confirmed">Awarded</span>
+          </li>
+        </ul>
+      </div>
+
+      <div class="panel">
+        <div class="panel-header">
+          <h2>Active Orders</h2>
+          <a href="#" style="color:var(--primary);font-size:0.9rem;font-weight:600;">View All →</a>
+        </div>
+        <ul class="activity-list">
+          <li class="activity-item">
+            <div class="activity-info">
+              <div class="activity-icon">☕</div>
+              <div>
+                <div style="font-weight:600;">ORD-INA-2026-00124 · Ethiopian Coffee</div>
+                <div style="font-size:0.85rem;color:var(--text-muted);">5 MT · Status: Quality Check → Ready for Shipping</div>
+              </div>
+            </div>
+            <span class="status processing">In Progress</span>
+          </li>
+        </ul>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

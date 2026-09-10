@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Request for Quotation — INA Agro Connect</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css" />
+  <style>
+    .rfq-container { max-width:800px; margin:40px auto 80px; padding:0 24px; }
+    .rfq-card { background:white; border:1px solid var(--border); border-radius:16px; padding:36px; box-shadow:var(--shadow); }
+    .form-group { margin-bottom:22px; }
+    .form-group label { display:block; font-weight:600; font-size:0.9rem; margin-bottom:8px; }
+    .form-group input, .form-group select, .form-group textarea {
+      width:100%; padding:12px 14px; border:1.5px solid var(--border); border-radius:8px; font-size:0.95rem; font-family:inherit;
+    }
+    .form-group input:focus, .form-group select:focus, .form-group textarea:focus {
+      outline:none; border-color:var(--primary);
+    }
+    .form-row { display:grid; grid-template-columns:1fr 1fr; gap:20px; }
+    .form-hint { font-size:0.8rem; color:var(--text-muted); margin-top:6px; }
+    @media(max-width:640px){ .form-row{grid-template-columns:1fr;} }
+  </style>
+</head>
+<body>
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="logo">
+        <div class="logo-icon">🌱</div>
+        <div>INA Agro Connect<span>Request for Quotation</span></div>
+      </a>
+      <div class="nav-actions">
+        <a href="buyer-dashboard.html" class="btn btn-outline btn-sm">← Back to Dashboard</a>
+      </div>
+    </div>
+  </nav>
+
+  <div class="rfq-container">
+    <div style="text-align:center;margin-bottom:32px;">
+      <h1 style="font-size:1.9rem;font-weight:700;">Create Request for Quotation</h1>
+      <p style="color:var(--text-muted);margin-top:8px;">Tell suppliers exactly what you need. Verified suppliers will respond with competitive quotes.</p>
+    </div>
+
+    <div class="rfq-card">
+      <form>
+        <div class="form-group">
+          <label>Product / Commodity *</label>
+          <input type="text" placeholder="e.g. Grade 1 Ethiopian Coffee, Dried Moringa, White Sesame" required />
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label>Quantity *</label>
+            <input type="text" placeholder="e.g. 10 MT or 5000 kg" required />
+          </div>
+          <div class="form-group">
+            <label>Unit</label>
+            <select>
+              <option>Metric Tons (MT)</option>
+              <option>Kilograms (kg)</option>
+              <option>Bags</option>
+              <option>Containers (20ft / 40ft)</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label>Quality Grade / Specification</label>
+            <input type="text" placeholder="e.g. Grade 1, Organic, Moisture < 8%" />
+          </div>
+          <div class="form-group">
+            <label>Required Delivery Date</label>
+            <input type="date" />
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label>Destination *</label>
+            <input type="text" placeholder="e.g. Dubai, Rotterdam, Addis Ababa" required />
+          </div>
+          <div class="form-group">
+            <label>Incoterms Preference</label>
+            <select>
+              <option>FOB</option>
+              <option>CIF</option>
+              <option>CFR</option>
+              <option>EXW</option>
+              <option>DAP</option>
+              <option>To be discussed</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label>Packaging Requirements</label>
+          <input type="text" placeholder="e.g. 60 kg jute bags, 25 kg kraft bags, bulk" />
+        </div>
+
+        <div class="form-group">
+          <label>Additional Requirements / Notes</label>
+          <textarea rows="4" placeholder="Certifications needed, inspection requirements, payment terms preference, etc."></textarea>
+        </div>
+
+        <div class="form-group">
+          <label>Visibility</label>
+          <select>
+            <option>Send to all matching verified suppliers</option>
+            <option>Send only to selected suppliers</option>
+            <option>Private (invite only)</option>
+          </select>
+          <div class="form-hint">Matching suppliers in the relevant category will receive your RFQ.</div>
+        </div>
+
+        <div style="display:flex;gap:14px;margin-top:32px;">
+          <button type="submit" class="btn btn-primary" style="padding:14px 32px;font-size:1rem;">📤 Send RFQ</button>
+          <button type="button" class="btn btn-outline" style="padding:14px 24px;">Save as Draft</button>
+        </div>
+      </form>
+    </div>
+
+    <div style="margin-top:40px;background:var(--primary-light);border-radius:12px;padding:24px;">
+      <h3 style="margin-bottom:12px;color:var(--primary);">How the RFQ process works</h3>
+      <ol style="padding-left:20px;color:var(--text);line-height:1.8;">
+        <li>You submit a detailed Request for Quotation.</li>
+        <li>Matching verified suppliers receive the RFQ and can respond with price, quantity, lead time and terms.</li>
+        <li>You compare quotes, negotiate via messaging, and select the best offer.</li>
+        <li>Accepted quotation can be converted into a formal order on the platform.</li>
+      </ol>
+    </div>
+  </div>
+</body>
+</html>

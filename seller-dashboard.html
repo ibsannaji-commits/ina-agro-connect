@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Seller Dashboard — INA Agro Connect</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+  <!-- TOP NAV (simplified for dashboard) -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="logo">
+        <div class="logo-icon">🌱</div>
+        <div>
+          INA Agro Connect
+          <span>Seller Dashboard</span>
+        </div>
+      </a>
+      <div class="nav-actions">
+        <button class="btn btn-outline btn-sm" style="position:relative;">
+          🔔 <span style="position:absolute; top:-4px; right:-4px; background:var(--danger); color:white; font-size:0.65rem; width:16px; height:16px; border-radius:50%; display:flex; align-items:center; justify-content:center;">3</span>
+        </button>
+        <div style="display:flex; align-items:center; gap:10px; margin-left:8px;">
+          <div class="user-avatar" style="width:36px; height:36px;">IN</div>
+          <div>
+            <div style="font-weight:600; font-size:0.9rem;">INA Agro Supplier</div>
+            <div style="font-size:0.75rem; color:var(--text-muted);">Seller Account</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- DASHBOARD LAYOUT -->
+  <div class="dashboard-layout">
+    
+    <!-- SIDEBAR -->
+    <aside class="dash-sidebar">
+      <div class="user-info">
+        <div class="user-avatar">IN</div>
+        <div>
+          <div style="font-weight:600; font-size:0.95rem;">INA Agro Supplier</div>
+          <div style="font-size:0.8rem; color:var(--primary);">✓ Verified</div>
+        </div>
+      </div>
+      <ul class="dash-nav">
+        <li><a href="#" class="active">🏠 Dashboard</a></li>
+        <li><a href="#">📦 My Products</a></li>
+        <li><a href="#">🛒 Orders</a></li>
+        <li><a href="#">📋 Buyer Requests</a></li>
+        <li><a href="#">💬 Messages</a></li>
+        <li><a href="#">💰 Payments</a></li>
+        <li><a href="#">📊 Analytics</a></li>
+        <li><a href="#">🏢 Company Profile</a></li>
+      </ul>
+      <div style="margin-top:40px; padding:16px; background:var(--primary-light); border-radius:10px; font-size:0.85rem; color:var(--text-muted);">
+        <strong style="color:var(--primary);">Connecting Ethiopian Agriculture to Opportunities</strong>
+      </div>
+    </aside>
+
+    <!-- MAIN -->
+    <main class="dash-main">
+      <div class="dash-header">
+        <div>
+          <h1>Welcome, INA Agro Supplier 👋</h1>
+          <p style="color:var(--text-muted); margin-top:4px;">Here’s what’s happening with your business today.</p>
+        </div>
+        <a href="#" class="btn btn-primary">+ Add Product</a>
+      </div>
+
+      <!-- METRICS -->
+      <div class="metrics-grid">
+        <div class="metric-card">
+          <div class="icon">🌿</div>
+          <div class="value">24</div>
+          <div class="label">Products Listed</div>
+        </div>
+        <div class="metric-card">
+          <div class="icon">📋</div>
+          <div class="value">8</div>
+          <div class="label">Active Requests</div>
+        </div>
+        <div class="metric-card">
+          <div class="icon">🛒</div>
+          <div class="value">12</div>
+          <div class="label">Orders</div>
+        </div>
+        <div class="metric-card">
+          <div class="icon">✅</div>
+          <div class="value">9</div>
+          <div class="label">Completed Sales</div>
+        </div>
+      </div>
+
+      <!-- RECENT ACTIVITY -->
+      <div class="panel">
+        <div class="panel-header">
+          <h2>📈 Recent Activity</h2>
+          <a href="#" style="color:var(--primary); font-size:0.9rem; font-weight:600;">View All →</a>
+        </div>
+        <div style="display:grid; grid-template-columns:1fr 1fr; gap:32px;">
+          <!-- Recent Orders -->
+          <div>
+            <h3 style="font-size:0.95rem; margin-bottom:14px; color:var(--text-muted);">Recent Orders</h3>
+            <ul class="activity-list">
+              <li class="activity-item">
+                <div class="activity-info">
+                  <div class="activity-icon">🌾</div>
+                  <div>
+                    <div style="font-weight:600; font-size:0.95rem;">ORD-2026-0156</div>
+                    <div style="font-size:0.85rem; color:var(--text-muted);">White Sesame Seed · 2,000 kg</div>
+                    <div style="font-size:0.8rem; color:var(--text-muted);">Addis Ababa · May 23</div>
+                  </div>
+                </div>
+                <span class="status confirmed">Confirmed</span>
+              </li>
+              <li class="activity-item">
+                <div class="activity-info">
+                  <div class="activity-icon">🥜</div>
+                  <div>
+                    <div style="font-weight:600; font-size:0.95rem;">ORD-2026-0155</div>
+                    <div style="font-size:0.85rem; color:var(--text-muted);">Red Kidney Beans · 1,500 kg</div>
+                    <div style="font-size:0.8rem; color:var(--text-muted);">Bahir Dar · May 22</div>
+                  </div>
+                </div>
+                <span class="status processing">Processing</span>
+              </li>
+              <li class="activity-item">
+                <div class="activity-info">
+                  <div class="activity-icon">🫘</div>
+                  <div>
+                    <div style="font-weight:600; font-size:0.95rem;">ORD-2026-0154</div>
+                    <div style="font-size:0.85rem; color:var(--text-muted);">Chickpeas · 3,000 kg</div>
+                    <div style="font-size:0.8rem; color:var(--text-muted);">Dire Dawa · May 21</div>
+                  </div>
+                </div>
+                <span class="status shipped">Shipped</span>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Recent RFQs -->
+          <div>
+            <h3 style="font-size:0.95rem; margin-bottom:14px; color:var(--text-muted);">Recent Buyer Requests (RFQs)</h3>
+            <ul class="activity-list">
+              <li class="activity-item">
+                <div class="activity-info">
+                  <div class="activity-icon">🥜</div>
+                  <div>
+                    <div style="font-weight:600; font-size:0.95rem;">RFQ-2026-0789</div>
+                    <div style="font-size:0.85rem; color:var(--text-muted);">Groundnuts · 5,000 kg</div>
+                    <div style="font-size:0.8rem; color:var(--text-muted);">Addis Ababa · May 24</div>
+                  </div>
+                </div>
+                <span class="status open">Open</span>
+              </li>
+              <li class="activity-item">
+                <div class="activity-info">
+                  <div class="activity-icon">☕</div>
+                  <div>
+                    <div style="font-weight:600; font-size:0.95rem;">RFQ-2026-0788</div>
+                    <div style="font-size:0.85rem; color:var(--text-muted);">Coffee (Washed) · 2,000 kg</div>
+                    <div style="font-size:0.8rem; color:var(--text-muted);">Jimma · May 23</div>
+                  </div>
+                </div>
+                <span class="status open">Open</span>
+              </li>
+              <li class="activity-item">
+                <div class="activity-info">
+                  <div class="activity-icon">🌱</div>
+                  <div>
+                    <div style="font-weight:600; font-size:0.95rem;">RFQ-2026-0787</div>
+                    <div style="font-size:0.85rem; color:var(--text-muted);">Soybean · 10,000 kg</div>
+                    <div style="font-size:0.8rem; color:var(--text-muted);">Hawassa · May 21</div>
+                  </div>
+                </div>
+                <span class="status" style="background:#f3f4f6; color:#6b7280;">Closed</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- QUICK ACTIONS -->
+      <div class="panel">
+        <div class="panel-header">
+          <h2>⚡ Quick Actions</h2>
+        </div>
+        <div class="quick-actions">
+          <a href="#" class="quick-action">
+            <div class="icon">+</div>
+            <div>
+              <div style="font-weight:600;">Add Product</div>
+              <div style="font-size:0.85rem; color:var(--text-muted);">List a new product and reach more buyers</div>
+            </div>
+          </a>
+          <a href="#" class="quick-action">
+            <div class="icon">🔍</div>
+            <div>
+              <div style="font-weight:600;">View RFQs</div>
+              <div style="font-size:0.85rem; color:var(--text-muted);">Browse buyer requests and submit quotes</div>
+            </div>
+          </a>
+          <a href="#" class="quick-action">
+            <div class="icon">💬</div>
+            <div>
+              <div style="font-weight:600;">Messages</div>
+              <div style="font-size:0.85rem; color:var(--text-muted);">Check messages from buyers and partners</div>
+            </div>
+          </a>
+        </div>
+      </div>
+
+    </main>
+  </div>
+
+</body>
+</html>
