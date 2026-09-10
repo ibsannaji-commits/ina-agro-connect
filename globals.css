@@ -1,0 +1,34 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+
+:root {
+  --primary: #1a7a4c;
+  --primary-dark: #0f5c38;
+  --primary-light: #e8f5ee;
+}
+
+body {
+  font-family: 'Inter', system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+@layer components {
+  .btn {
+    @apply inline-flex items-center justify-center gap-2 rounded-lg font-semibold transition-all duration-200;
+  }
+  .btn-primary {
+    @apply bg-primary text-white hover:bg-primary-dark px-5 py-2.5;
+  }
+  .btn-outline {
+    @apply border-[1.5px] border-primary text-primary hover:bg-primary-light px-5 py-2.5;
+  }
+  .btn-sm {
+    @apply px-3.5 py-1.5 text-sm;
+  }
+  .card {
+    @apply bg-white border border-gray-200 rounded-xl shadow-sm;
+  }
+}
