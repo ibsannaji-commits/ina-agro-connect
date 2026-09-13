@@ -1,9 +1,9 @@
 import { NextRequest, NextResponse } from "next/server";
+import { activateSubscription, PlanCode, BillingCycle } from "@/lib/subscriptions";
 
 /**
  * POST /api/payments/chapa/webhook
- * Receives payment result from Chapa and verifies it.
- * Always re-verify with Chapa API before activating a subscription.
+ * Receives payment result from Chapa, verifies, activates subscription, sends notifications.
  */
 export async function POST(req: NextRequest) {
   try {
@@ -19,45 +19,47 @@ export async function POST(req: NextRequest) {
       return NextResponse.json({ received: true });
     }
 
-    // ALWAYS re-verify with Chapa (do not trust webhook payload alone)
+    // ALWAYS re-verify with Chapa
     const verifyRes = await fetch(
       `https://api.chapa.co/v1/transaction/verify/${txRef}`,
       {
-        headers: {
-          Authorization: `Bearer ${secretKey}`,
-        },
+        headers: { Authorization: `Bearer ${secretKey}` },
       }
     );
-
     const verifyData = await verifyRes.json();
 
     if (
       verifyData.status === "success" &&
       verifyData.data?.status === "success"
     ) {
-      const { amount, meta, reference } = verifyData.data;
+      const { amount, meta, reference, first_name, email, phone_number } =
+        verifyData.data;
 
-      // TODO: Update database — mark payment success + activate subscription
-      // 1. Find payment by tx_ref
-      // 2. payment.status = "success", paidAt = now, providerRef = reference
-      // 3. subscription.status = "active", set startsAt / endsAt based on billing_cycle
-      // 4. Send confirmation email / SMS
+      const plan = (meta?.plan || "pro") as PlanCode;
+      const billingCycle = (meta?.billing_cycle || "monthly") as BillingCycle;
+      const userId = meta?.user_id || "unknown";
 
-      console.log("[Chapa Webhook] Payment verified:", {
+      // Activate subscription + send email/SMS
+      await activateSubscription({
+        userId,
+        plan,
+        billingCycle,
+        amount: Number(amount) || 0,
         txRef,
-        amount,
-        reference,
-        meta,
+        providerRef: reference,
+        email: email || meta?.email,
+        phone: phone_number || meta?.phone,
+        name: first_name || meta?.name,
       });
+
+      console.log("[Chapa Webhook] Activated:", txRef, plan, amount);
     } else {
-      console.log("[Chapa Webhook] Payment not successful:", txRef, verifyData);
+      console.log("[Chapa Webhook] Not successful:", txRef, verifyData?.data?.status);
     }
 
-    // Always return 200 so Chapa stops retrying
     return NextResponse.json({ received: true });
   } catch (error) {
     console.error("[Chapa Webhook] Error:", error);
-    // Still return 200 to avoid retry storms
     return NextResponse.json({ received: true });
   }
 }

@@ -1,63 +1,77 @@
-# INA Agro Connect — Complete Website
+# INA Agro Connect — Next.js Production Starter
 
 **Connecting Farmers • Suppliers • Buyers • Global Markets**
 
-## How to open
+Full production-ready Next.js 15 + TypeScript + Tailwind CSS starter for the INA Agro Connect B2B agricultural marketplace.
 
-1. Unzip this folder
-2. Open `index.html` in your browser  
-   (Or use a local server: `npx serve .`)
+## Features Included
 
-## All Pages
+- Modern App Router (Next.js 15)
+- TypeScript
+- Tailwind CSS design system (agricultural green theme)
+- Responsive layout
+- Shared Navbar & Footer
+- Home page with hero, search, categories, featured products
+- Marketplace with filters & product grid
+- Seller Dashboard
+- Clean component structure ready for expansion
 
-| Page | File | Description |
-|------|------|-------------|
-| Home | `index.html` | Hero, search, categories, featured products |
-| Marketplace | `marketplace.html` | Product listings & filters |
-| Product Detail | `product-detail.html` | Single product view |
-| Pricing (EN) | `pricing.html` | Free / Pro / Premium plans |
-| Pricing (Oromo) | `pricing-or.html` | Gatii — Afaan Oromoo |
-| Pricing (Amharic) | `pricing-am.html` | ዋጋ — አማርኛ |
-| Checkout | `checkout.html` | Payment flow (Telebirr, CBE, Card) |
-| Subscription | `subscription.html` | My plan, renew, invoice |
-| RFQ | `rfq.html` | Request for Quotation form |
-| Seller Dashboard | `seller-dashboard.html` | Supplier metrics & orders |
-| Buyer Dashboard | `buyer-dashboard.html` | Buyer activity |
-| Company Profile | `company-profile.html` | Supplier public profile |
-| Login | `login.html` | Sign in |
-| Register | `register.html` | Create account |
-| Admin | `admin-dashboard.html` | Platform management |
-| About | `about.html` | Mission & vision |
-| Contact | `contact.html` | Contact form |
+## Getting Started
 
-## Navigation structure
+```bash
+# 1. Install dependencies
+npm install
 
-```
-Home → Marketplace → Pricing → RFQ → About → Contact
-         ↓
-    Seller / Buyer Dashboards
-    Subscription · Checkout
-    Login / Register
+# 2. Run development server
+npm run dev
+
+# 3. Open http://localhost:3000
 ```
 
-## Languages
+## Project Structure
 
-- English (default)
-- Afaan Oromoo (`pricing-or.html`)
-- አማርኛ (`pricing-am.html`)
+```
+app/
+  page.tsx              → Home
+  marketplace/page.tsx  → Marketplace
+  seller/page.tsx       → Seller Dashboard
+  buyer/                → (extend)
+  product/              → (extend)
+  rfq/                  → (extend)
+  login/                → (extend)
+  register/             → (extend)
+  admin/                → (extend)
+components/
+  Navbar.tsx
+  Footer.tsx
+```
 
-## Related packages
+## Recommended Next Steps
 
-- **Next.js app** — production web (TypeScript + Tailwind)
-- **Expo / Flutter** — mobile apps
-- **Payment integration** — Chapa + Telebirr guide
-- **Pitch deck** — investor presentation
+1. Add remaining pages (Buyer, Product Detail, RFQ, Login, Register, Admin, Company Profile)
+2. Connect to a backend (NestJS / Supabase / Prisma + PostgreSQL)
+3. Add authentication (Clerk / NextAuth / Supabase Auth)
+4. Implement real product images (Unsplash or Cloudinary)
+5. Add mobile app with Flutter or Expo (React Native)
+6. Deploy on Vercel
 
-## Brand
+## Design Tokens
 
-- Primary green: `#1a7a4c`
-- Tagline: *Connecting Agriculture to Opportunity*
-- Market: Ethiopia → Africa → Global
+- Primary: `#1a7a4c`
+- Primary Dark: `#0f5c38`
+- Primary Light: `#e8f5ee`
+
+## Tech Stack Recommendation for Full Production
+
+| Layer        | Technology                          |
+|--------------|-------------------------------------|
+| Frontend     | Next.js 15 + Tailwind + shadcn/ui  |
+| Mobile       | Flutter or Expo (React Native)     |
+| Backend      | NestJS or Supabase                 |
+| Database     | PostgreSQL                         |
+| Auth         | Clerk / Supabase Auth + OTP        |
+| Storage      | Cloudflare R2 / AWS S3             |
+| Hosting      | Vercel + Railway / Render          |
 
 ---
 
